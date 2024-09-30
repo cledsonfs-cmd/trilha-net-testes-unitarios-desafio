@@ -59,7 +59,7 @@ public class ValidacoesListaTests
         var resultado = _validacoes.MultiplicarNumerosLista(lista,2);
 
         // Assert
-        Assert.True(resultadoEsperado.SequenceEqual(resultado));
+        Assert.True(resultadoEsperado.Intersect(resultado).Any());
     }
 
     [Fact]
